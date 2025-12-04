@@ -1,5 +1,5 @@
-{% load static %}
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
   Анфиса для друзей. Мороженое {{ ice_cream.title|lower }}
 {% endblock %}
@@ -15,7 +15,7 @@
         <img 
           class="img-fluid" 
           height="400" width="300"
-          src="img/image-holder.png"
+          src="{% static 'img/image-holder.png' %}"
           >      
       </div>
     </div>
